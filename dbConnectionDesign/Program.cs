@@ -7,12 +7,12 @@ namespace dbConnectionDesign
         static void Main(string[] args)
         {
             var oracleDbConnection = new OracleDbConnection("Url");
-            oracleDbConnection.OpenConnection();
-            oracleDbConnection.CloseConnection();
-
+            var db1 = new DbCommand(oracleDbConnection);
+            db1.Execute("OracleDB command");
+            Console.WriteLine();
             var sqlConnection = new SqlConnection("url");
-            sqlConnection.OpenConnection();
-            sqlConnection.CloseConnection();
+            var db = new DbCommand(sqlConnection);
+            db.Execute("T-SQL language command");
         }
     }
 }

@@ -13,7 +13,7 @@ namespace dbConnectionDesign
             if (IsEmpty(connectionString))
                 throw new Exception("invalid string provided");
             ConnectionString = connectionString;
-
+            Timeout = TimeSpan.FromMinutes(5);
         }
 
         public abstract void OpenConnection();

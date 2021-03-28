@@ -8,20 +8,22 @@ namespace dbConnectionDesign
 
         public SqlConnection(string connectionString) : base(connectionString)
         {
-            Timeout = TimeSpan.FromHours(1);
+            
         }
 
 
         public override void OpenConnection()
         {
-            Console.WriteLine("Opening sql connection");
+            Console.WriteLine("Opened sql connection");
+
+            Console.WriteLine($"timeout: {Timeout.Minutes} min");
+            Console.WriteLine($"Connected to: {ConnectionString}");
         }
 
         public override void CloseConnection()
         {
-            Console.WriteLine("Closing sql connection");
-            Console.WriteLine(Timeout);
-            Console.WriteLine(ConnectionString);
+            Console.WriteLine("Closed sql connection");
+
         }
     }
 }
