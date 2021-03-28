@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Threading.Channels;
 
 namespace StackWithObjects
 {
@@ -13,6 +15,11 @@ namespace StackWithObjects
 
         public object Pop()
         {
+            if (stack.Count == 0)
+            {
+                Console.WriteLine("Stack is  empty");
+                return null;
+            }
             var lastInStack = stack[stack.Count - 1];
             stack.RemoveAt(stack.Count - 1);
             return lastInStack;

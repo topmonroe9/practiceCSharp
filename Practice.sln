@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StopWatch", "Practice\StopW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackWithObjects", "StackWithObjects\StackWithObjects.csproj", "{64693050-B75E-4542-9BB7-403A575FF15E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dbConnectionDesign", "dbConnectionDesign\dbConnectionDesign.csproj", "{ED979EEB-2959-40E3-B61A-FBD85EF47573}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{64693050-B75E-4542-9BB7-403A575FF15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64693050-B75E-4542-9BB7-403A575FF15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64693050-B75E-4542-9BB7-403A575FF15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED979EEB-2959-40E3-B61A-FBD85EF47573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED979EEB-2959-40E3-B61A-FBD85EF47573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED979EEB-2959-40E3-B61A-FBD85EF47573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED979EEB-2959-40E3-B61A-FBD85EF47573}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
